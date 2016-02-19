@@ -1,7 +1,7 @@
 var fs = require('fs');
-var basedir = process.env.PWD
+var basedir = process.env.PWD||''
 
-var FILES_DIR = basedir + '/articles';
+var FILES_DIR = basedir + 'articles';
 
 module.exports = {
   getArticles: function () {

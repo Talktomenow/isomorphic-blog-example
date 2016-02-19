@@ -12,7 +12,7 @@ var express = require('express')
 var app = express();
 
 // Some const
-var BASEDIR = process.env.PWD
+var BASEDIR = process.env.PWD || process.cwd() ;
 
 // Express App setup
 app.set("views", BASEDIR + '/public');
